@@ -1,0 +1,9 @@
+router ospf 1
+network 4.0.0.0 0.255.255.255 area 0
+network 192.168.122.4 0.255.255.255 area 0 
+router-id 1.1.1.4
+exit
+int f0/0
+ip ospf authentication
+ip ospf auth message-digest
+ip ospf message-digest-key 1 MD5 ccna
